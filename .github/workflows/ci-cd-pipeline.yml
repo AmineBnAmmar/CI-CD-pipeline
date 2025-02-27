@@ -39,6 +39,10 @@ jobs:
           source venv/bin/activate
           pytest tests/ --verbose
 
+      - name: Start MLflow Tracking Server
+        run: |
+	  mlflow ui --host localhost --port 5000 & \
+
       - name: Build & Train Model
         run: |
           source venv/bin/activate
