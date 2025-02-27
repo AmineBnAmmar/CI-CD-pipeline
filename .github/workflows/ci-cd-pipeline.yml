@@ -41,8 +41,8 @@ jobs:
 
       - name: Start MLflow Tracking Server
         run: |
-	  source venv/bin/activate
-	  mlflow ui --host localhost --port 5000 & 
+          source venv/bin/activate
+          mlflow ui --host localhost --port 5000 &  # Removed unnecessary indentation
 
       - name: Build & Train Model
         run: |
