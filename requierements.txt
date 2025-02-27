@@ -12,3 +12,4 @@ joblib
 fastapi
 uvicorn
 mlflow 
+psutil
